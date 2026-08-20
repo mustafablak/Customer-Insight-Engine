@@ -1,16 +1,60 @@
-# React + Vite
+# 🚀 Customer Insight Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> An enterprise-grade, microservices-based platform for real-time, multilingual sentiment analysis on customer feedback.
 
-Currently, two official plugins are available:
+![Demo](demo.gif)
+*(Arayüzün kullanımını ve yapay zeka analizinin anlık sonucunu gösteren demo)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 Project Overview
 
-## React Compiler
+**Customer Insight Engine** is a full-stack AI architecture designed to process, analyze, and persist customer reviews. By decoupling the machine learning model from the core business logic and user interface, this project demonstrates a highly scalable **Microservices Architecture**. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+It accurately classifies text as `Positive` or `Negative` and provides a mathematical **Confidence Score** using a custom-trained NLP model, instantly saving the telemetry to a relational database.
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **🧠 Custom Machine Learning Model:** Trained on a massive 250,000-row Kaggle dataset supporting both English and Turkish languages.
+* **🔗 Decoupled Microservices:** Independent operation of the Frontend (React), Backend Orchestrator (C#), and AI Engine (Python).
+* **⚡ Asynchronous Communication:** Non-blocking HTTP data flow between the .NET API and the FastAPI service.
+* **💾 Data Persistence:** Entity Framework Core integration for robust SQL Server data logging.
+* **🎨 Modern UI/UX:** A minimalist, fast, and responsive React web interface powered by Vite.
+
+---
+
+## 🏗️ System Architecture & Data Flow
+
+The platform is divided into three main operational layers that communicate seamlessly:
+
+1. **Client Request:** The user submits a review via the **React** frontend.
+2. **API Orchestration:** The **C# .NET Core 9.0 API** catches the payload, validates it, and forwards it to the AI microservice.
+3. **AI Inference:** The **Python FastAPI** server processes the text through a serialized Scikit-Learn model (TF-IDF & Logistic Regression) and returns the sentiment label and confidence score.
+4. **Database Commit:** The C# API maps the AI response to a domain model and commits the record to **SQL Server** using EF Core.
+5. **UI Update:** The React interface immediately reflects the AI's verdict and the unique Database ID.
+
+---
+
+## 🛠️ Technology Stack
+
+### 🖥️ Frontend (Client)
+* **React 18** (with Vite for ultra-fast HMR)
+* **CSS3** (Custom minimalist dark-mode UI)
+
+### ⚙️ Backend API (Orchestrator)
+* **C# .NET Core 9.0**
+* **Entity Framework Core 9.0** (Code-First Approach)
+* **RESTful Architecture** & Swagger UI
+
+### 🤖 AI Microservice (Engine)
+* **Python 3.12**
+* **FastAPI** & **Uvicorn** (High-performance ASGI server)
+* **Scikit-Learn** & **Pandas** (Data processing and ML)
+
+### 🗄️ Database
+* **Microsoft SQL Server**
+
+---
+
+## 🚀 Getting Started (Running Locally)
+
+To run this microservices architecture on your local machine, you need to spin up all three servers simultaneously.
+
