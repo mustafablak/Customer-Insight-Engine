@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "CcRoSJnxwTw9RjLyPPWV1hisL1wWhudgFwYmIXkuk6k=",
+  "Source": "CustomerInsight.API",
+  "BasePath": "_content/CustomerInsight.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
