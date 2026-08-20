@@ -2,15 +2,15 @@
 
 > An enterprise-grade, microservices-based platform for real-time, multilingual sentiment analysis on customer feedback.
 
-![Demo](<img width="800" height="423" alt="demo" src="https://github.com/user-attachments/assets/9e1c1b7e-3172-4a9a-b789-dcb73f87a0e6" />)
+<img width="800" height="423" alt="demo" src="https://github.com/user-attachments/assets/9e1c1b7e-3172-4a9a-b789-dcb73f87a0e6" />
 
-## 📖 Project Overview
+## Project Overview
 
 **Customer Insight Engine** is a full-stack AI architecture designed to process, analyze, and persist customer reviews. By decoupling the machine learning model from the core business logic and user interface, this project demonstrates a highly scalable **Microservices Architecture**. 
 
 It accurately classifies text as `Positive` or `Negative` and provides a mathematical **Confidence Score** using a custom-trained NLP model, instantly saving the telemetry to a relational database.
 
-## ✨ Key Features
+## Key Features
 
 * **🧠 Custom Machine Learning Model:** Trained on a massive 250,000-row Kaggle dataset supporting both English and Turkish languages.
 * **🔗 Decoupled Microservices:** Independent operation of the Frontend (React), Backend Orchestrator (C#), and AI Engine (Python).
@@ -20,7 +20,7 @@ It accurately classifies text as `Positive` or `Negative` and provides a mathema
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+## System Architecture & Data Flow
 
 The platform is divided into three main operational layers that communicate seamlessly:
 
@@ -32,7 +32,7 @@ The platform is divided into three main operational layers that communicate seam
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### 🖥️ Frontend (Client)
 * **React 18** (with Vite for ultra-fast HMR)
