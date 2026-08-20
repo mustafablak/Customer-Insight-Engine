@@ -1,0 +1,95 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+textarea {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #242424;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #404040;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.result-card {
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.963);
+  text-align: left;
+  color: #000000;
+}
+
+.result-card.positive {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.result-card.negative {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.confidence-section {
+  margin: 20px 0;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 20px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 1s ease-in-out;
+}
+
+.db-info {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+  margin-top: 15px;
+}
+.result-card h2, 
+.result-card p {
+  color: #1f2937 !important;
+}
